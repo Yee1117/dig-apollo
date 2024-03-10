@@ -1,6 +1,6 @@
-# Dig into Apollo ![GitHub](https://img.shields.io/github/license/daohu527/Dig-into-Apollo.svg?style=popout) [![Documentation Status](https://readthedocs.org/projects/dig-into-apollo/badge/?version=latest)](https://dig-into-apollo.readthedocs.io/en/latest/?badge=latest)
+# 深入探究 Apollo (阿波罗) ![GitHub](https://img.shields.io/github/license/daohu527/Dig-into-Apollo.svg?style=popout) [![Documentation Status](https://readthedocs.org/projects/dig-into-apollo/badge/?version=latest)](https://dig-into-apollo.readthedocs.io/en/latest/?badge=latest)
 
-Dig into Apollo is mainly to help learning [Apollo](https://github.com/ApolloAuto/apollo) autopilot system. We first introduce the functions of each module in detail, and then analyzed the code of each module. If you like autonomous driving and want to learn it, let's start this project and discuss anything you want to know!
+“深入探究阿波罗” 主要旨在协助学习 [Apollo](https://github.com/ApolloAuto/apollo)自动驾驶系统。 首先我们将详细介绍每个模块的功能，然后分析每个模块的代码。如果你对自动驾驶感兴趣并想学习它，让我们开始这个项目并讨论你想知道的任何内容！
 
 #### readthedocs
 - [dig-into-apollo](https://dig-into-apollo.readthedocs.io/en/latest/index.html#)
@@ -8,77 +8,77 @@ Dig into Apollo is mainly to help learning [Apollo](https://github.com/ApolloAut
 #### google groups
 - [disscuss-apollo](https://groups.google.com/g/d-apollo)
 
-## Friendly tips
+## 友情提示
 
-* If "git clone" on github is too slow, pls try apollo **[mirror](https://gitee.com/baidu/apolloauto)**. 
-* If you have any questions, please feel free to ask in **[git issue](https://github.com/daohu527/dig-into-apollo/issues)**.  
-* If you need to add new documents or give suggestions, welcome to participate in **[git discussion](https://github.com/daohu527/dig-into-apollo/discussions)**
+* 如果在github上使用"git clone"太慢，请尝试使用阿波罗 **[镜像](https://gitee.com/baidu/apolloauto)**。 
+* 如果您有任何问题，请随时在 **[git问题](https://github.com/daohu527/dig-into-apollo/issues)**  中提问。
+* 如果您需要添加新文档或提供建议，欢迎参与 **[git讨论](https://github.com/daohu527/dig-into-apollo/discussions)**。
 
-## Table of Contents
+## 目录
 
-- [What's apollo](what_is_apollo)
-- [How to build](how_to_build)
-- [Code learning](code_learning)
-    - [cyber](cyber)
-    - [docker](docker)
-    - [modules](modules)
-        - [audio](modules/audio)
-        - [bridge](modules/bridge)
-        - [canbus](modules/canbus)
-        - [data](modules/data)
-        - [drivers](modules/drivers)
-        - [dreamview](modules/dreamview)   
-        - [map](modules/map)
-        - [localization](modules/localization)
-        - [perception](modules/perception)
-        - [prediction](modules/prediction)
-        - [routing](modules/routing)
-        - [planning](modules/planning)
-        - [control](modules/control)
-        - [transform](modules/transform)
-        - [tools](modules/tools)
-        - [v2x](modules/v2x)
-- [performance](performance)
-- [simulation](simulation)
-- [library](library)
-- [papers](papers)
-- [questions](questions)
-
-
-## Getting Started
-
-If you are like me before and don’t know how to start the Apollo project. Here are some suggestions.  
-
-1. First understand the basic module functions. If you are not clear about the general function of the module, it's difficult for you to understand what's the code doing. Here is an beginner level [tutorial](https://apollo.auto/devcenter/coursetable_cn.html?target=1)  
-2. Then you need to understand the specific methods according to the module, which will be documented in this tutorial. We will analyze the code in depth next. You can learn step by step according to our tutorial.  
-3. I know it will be a painful process, especially when you are first learning Apollo. If you persist in asking questions and studying, it will become easier in 1-2 months. 
-4. Last but not least, the method in Apollo is almost perfect, but there will be some problems. Try to implement and improve it, find papers, try the latest methods, and hone your skills. I believe you will enjoy this process. 
+- [Apollo是什么](what_is_apollo)
+- [如何构建](how_to_build)
+- [代码学习](code_learning)
+    - [网络](cyber)
+    - [容器](docker)
+    - [模块](modules)
+        - [音频](modules/audio)
+        - [桥接](modules/bridge)
+        - [车载网络](modules/canbus)
+        - [数据](modules/data)
+        - [驱动程序](modules/drivers)
+        - [梦幻视图](modules/dreamview)   
+        - [地图](modules/map)
+        - [定位](modules/localization)
+        - [感知](modules/perception)
+        - [预测](modules/prediction)
+        - [路由](modules/routing)
+        - [规划](modules/planning)
+        - [控制](modules/control)
+        - [变换](modules/transform)
+        - [工具](modules/tools)
+        - [车对车/车对设施通信](modules/v2x)
+- [性能](performance)
+- [仿真](simulation)
+- [库](library)
+- [论文](papers)
+- [问题](questions)
 
 
-## How to learn?
+## 入门指南
 
-**Basic learning**  
+如果你像之前的我一样不知道如何开始阿波罗项目，这里有一些建议。  
 
-1. Watching some introductory tutorials will help you understand the Apollo autopilot system more quickly. I highly recommend [tutorial](https://apollo.auto/devcenter/coursetable_cn.html?target=1)  
-2. Try to ask some questions, read some blogs, papers, or go to github to add some [issues](https://github.com/ApolloAuto/apollo/issues).  
-3. If you don’t have a self-driving car, you can try to deploy a simulation environment, I highly recommend [lgsvl](https://github.com/lgsvl/simulator). Its community is very friendly!  
-4. If there are any problems with the simulation environment, such as map creation, or some other problems, welcome to participate in this project [Flycars](https://github.com/Flycars). We will help as much as possible!  
-
-**Code learning**  
-
-1. First of all, you must understand c++. If you are not very familiar with it, I recommend the book **"c++ primer"**. This book is very good, but a bit thick. If you just want to start quickly, then try to find some simple tutorial, here I recommend teacher [Hou Jie](https://search.bilibili.com/all?keyword=%E4%BE%AF%E6%8D%B7)  
-2. After understanding C++, it is best to have some basic understanding of the modules, which will help you to read the code. This has been explained many times.  
-3. Use code reading tools to help you read the code. I highly recommend [vscode](https://code.visualstudio.com/). It supports both Windows and Linux, and has a wealth of plug-ins, which can help you track codes, search and find call relationships.  
-4. Of course, there are many professional knowledge and professional libraries. I can’t repeat the best tutorials one by one here, but I can try to recommend some. [Hongyi Li's deep learning](https://www.bilibili.com/video/BV1JE411g7XF?p=1), even a math tutorial [3Blue1Brown's math](https://space.bilibili.com/88461692/)  
-5. Do some experiments with the simulator. We say "Make your hands dirty". You can't just watch, you need to try to modify some configurations and see if it takes effect, if possible, you can also try to answer some questions.  
-6. Remember that autonomous driving is still far from mature. Read some papers, I read a lot of [papers](https://github.com/daohu527/awesome-self-driving-car#papers-blogs), it help me a lot.  
-
-Hope you have fun!  
-
-## Contributing
-This project welcomes contributions and suggestions. Please see our contribution guidelines.  
+1. 首先了解基本模块功能。如果你对模块的一般功能不清楚，你会发现很难理解代码在做什么。这里有一个初学者级别的[教程](https://apollo.auto/devcenter/coursetable_cn.html?target=1) 。  
+2. 然后你需要掌握每个模块特定的操作方法，这些方法将在本教程中详细说明。我们将在后续的内容中深度剖析代码。你可以按照我们的教程，逐步学习。
+3. 我明白这个过程可能会有些困难，尤其当你刚开始学习Apollo的时候。但只要你不断思考并勤奋学习，一到两个月后，一切都会变得简单许多。
+4. 最后要说的是，虽然Apollo的技术几乎十分完善了，但难免还是会遇到一些问题。尝试去实际操作并改进它，查阅相关的论文，试验最新的技术方法，去提升你的技能。我相信你会享受这个过程的。
 
 
-## References & resources
+## 如何学习？
+
+**基础学习**  
+
+1. 观看一些入门教程将帮助你更快地理解Apollo自动驾驶系统。我强烈推荐这个[教程](https://apollo.auto/devcenter/coursetable_cn.html?target=1)  
+2. 尝试提一些问题，阅读一些博客、论文，或者到github上提一些[问题](https://github.com/ApolloAuto/apollo/issues).  
+3. 如果你没有自驾车，可以尝试部署一个仿真环境，我强烈推荐使用[lgsvl](https://github.com/lgsvl/simulator)。它的社区非常友好！ 
+4. 如果仿真环境出现任何问题，比如创建地图或其他问题，欢迎加入我们的Flycars项目。我们会尽可能提供帮助！ 
+
+**代码学习**  
+
+1. 首先，你必须了解C++。如果你对它不是很熟悉，我推荐 **"c++ primer"** 这本书，但它有点厚。如果你想快速开始，那么可以尝试找一些简单的教程， 比如[侯捷](https://search.bilibili.com/all?keyword=%E4%BE%AF%E6%8D%B7)老师的课程。
+2. 在理解了C++之后，最好对一些模块有一定的基本了解，这将帮助你更好的阅读代码。
+3. 使用代码阅读工具来帮助你阅读代码。我强烈推荐使用[vscode](https://code.visualstudio.com/)。 它支持Windows和Linux，并有很多插件，可以帮助你跟踪代码、搜索和找到函数调用关系。
+4.当然，这个领域还有众多的专业知识和资源库。我没办法逐个去介绍它们，但我可以推荐一些优秀的资源，例如， [李宏毅的深度学习课程](https://www.bilibili.com/video/BV1JE411g7XF?p=1), 以及[3Blue1Brown的数学视频](https://space.bilibili.com/88461692/)教程
+5. “动手实践”：用模拟器做一些实验。你不能只停留在看，你可以尝试修改一下配置并检测是否有效。如果可能的话，你也可以尝试回答一些问题。
+6. 多读一些论文，因为自动驾驶远未成熟。我读了很多[论文](https://github.com/daohu527/awesome-self-driving-car#papers-blogs)，这对我帮助很大。
+
+希望你有个愉快的学习之旅!  
+
+## 贡献
+本项目欢迎任何形式的贡献和建议。请查看我们的贡献指南。  
+
+
+## 参考与资源
 - [apollo](https://github.com/ApolloAuto/apollo)  
-- [awesome-self-driving-car](https://github.com/daohu527/awesome-self-driving-car)    
+- [自动驾驶汽车资源集](https://github.com/daohu527/awesome-self-driving-car)    
